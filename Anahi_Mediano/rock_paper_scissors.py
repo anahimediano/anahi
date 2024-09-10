@@ -15,5 +15,5 @@ while True:
     elif(user_ch=="rock" and coputer_ch=="scissors") or (user_ch== "paper" and coputer_ch=="rock") or (user_ch=="scissors" and coputer_ch=="paper"):
             print("Congratulations, you won!")
     else:
-            print("you loose")
+            print("you lose")
             
