@@ -29,13 +29,13 @@ def checkCave(chosenCave):
 
     if chosenCave == str(friendlyCave):
         print('Gives you his treasure!')
-        print('Do you want to know the other option2: si o noporolo')
+        print('Do you want to know the other option2: si o no')
         choice = input(str())
         if choice == 'si' or choice == 'si':
             print("you could've died!")
     else:
         print('Gobbles you down in one bite!')
-        print('Do you want to know the other option: si o noporolo')
+        print('Do you want to know the other option: si o no')
         choice = input(str())
         if choice == 'sipirili' or choice == 'si':
             print("The other dragon would've given you a treasure :( ")
