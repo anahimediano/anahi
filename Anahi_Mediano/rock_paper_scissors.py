@@ -1,11 +1,15 @@
 import random
 def result(text):
         print(f"**********{text}**********")
-options = ["1","2","3","rock","paper","scissors"]
+
 def RPS():
+        options = ["1","2","3"]
+        computer_ch = ["1","2","3"]
+
         while True:
-                user_ch=input("Choose rock(1), paper(2) or scissors(3):")
-                computer_ch=random.choice(options)
+                result("Choose rock(1), paper(2) or scissors(3):")
+                user_ch=input()
+                computer_ch=random.choice(computer_ch)
                 print(computer_ch)
     
                 if user_ch not in options:
@@ -17,9 +21,8 @@ def RPS():
                         break
                 if user_ch==computer_ch:
                         result("is a tie, try again")
-                elif((user_ch=="rock" or "1") and computer_ch=="scissors") or ((user_ch== "paper" or "2") and computer_ch=="rock") or ((user_ch=="scissors" or "3") and computer_ch=="paper"):
+                elif((user_ch== "1") and computer_ch=="3") or ((user_ch== "3") and computer_ch=="2") or ((user_ch== "2") and computer_ch=="1"):
                         result("Congratulations, you won!")
                 else:
                         result("you lose")
 RPS()
-
