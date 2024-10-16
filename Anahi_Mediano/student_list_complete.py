@@ -16,7 +16,7 @@ def add_student():
 def remove_student():
     name= input ("Student to remove: ")
     if name in student:
-        student.remove  
+        student.remove(remove_student)
     else:
         print("Name not found")
         
@@ -58,15 +58,14 @@ def menu():
         choice = input("Enter your choice: ")
         if choice == "1":
             add_student()
-        if choice == "2":
+        elif choice == "2":
             remove_student()
-        if choice == "3":
+        elif choice == "3":
             pop_student()
-        if choice == "4":
+        elif choice == "4":
             update_student()
-        if choice == "5":
+        elif choice == "5":
+            exit()
             break
-        else:
-            "Not valid"
             
 menu()
