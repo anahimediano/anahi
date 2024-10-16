@@ -16,7 +16,7 @@ def add_student():
 def remove_student():
     name= input ("Student to remove: ")
     if name in student:
-        student.remove(remove_student)
+        student.remove(name)
     else:
         print("Name not found")
         
