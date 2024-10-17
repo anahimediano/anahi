@@ -25,7 +25,7 @@ def remove_task():
     else:
         print("error")
 # Function to find the index of a task
-def find_task(task):
+def find_task():
     #The user wants to know in what position is a task. 
     task = input ("Task you want to find: ")
     print(todo_list.index(task))
@@ -34,7 +34,7 @@ def complete_task():
     #The user wants to remove the first task. 
     print(f"the task {todo_list.pop(0)} was removed")
 # Function to filter tasks containing a specific keyword using list comprehension
-def filter_tasks(keyword):
+def filter_tasks():
     #TODO create a list comprehension variable to filter tasks containing a specific keyword
     keyword = input("Write a keyword to find the task:")
     filtered_tasks = [task for task in todo_list if keyword in task]
@@ -60,15 +60,15 @@ def main():
 
         #TODO create the if staments for the user. 
         if choice == "1":
-            display_todo_list
+            display_todo_list()
         elif choice == "2":
-            add_task
+            add_task()
         elif choice == "3":
-            remove_task
+            remove_task()
         elif choice == "4":
-            find_task
+            find_task()
         elif choice == "5":
-            complete_task
+            complete_task()
         elif choice == "6":
             filter_tasks()
         elif choice == "7":
